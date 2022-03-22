@@ -3,16 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Tutorial from './Components/Tutorial/Tutorial';
 import reportWebVitals from './reportWebVitals';
-import './Components/Tutorial/Tutorial.css';
 import {
   BrowserRouter as Router,
   Routes,
   Route,
   Link
 } from "react-router-dom";
-import ResponsiveAppBar from './Components/Base/ResponsiveAppBar';
+import ResponsiveAppBar from './Components/Layout/ResponsiveAppBar';
 import { Container } from '@mui/material';
 import GithubCardsApp from './Components/GithubCards/GithubCardsApp';
+import StarMatchApp from './Components/StarMatch/StarMatchApp';
 
 
 ReactDOM.render(
@@ -25,6 +25,7 @@ ReactDOM.render(
           <Route path="/" element={<Tutorial />} />
           <Route path="/Tutorial" element={<Tutorial />} />
           <Route path="/GithubCards" element={<GithubCardsApp />} />
+          <Route path="/StarMatch" element={<StarMatchApp />} />
         </Routes>
       </Container>
     </Router>
