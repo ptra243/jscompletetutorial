@@ -6,9 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  Link
-} from "react-router-dom";
+  Route} from "react-router-dom";
 import ResponsiveAppBar from './Components/Layout/ResponsiveAppBar';
 import { Container } from '@mui/material';
 import GithubCardsApp from './Components/GithubCards/GithubCardsApp';

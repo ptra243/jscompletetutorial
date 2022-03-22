@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { useState } from 'react';
 import { colors } from './StarMatchUtils'
 
 
@@ -11,8 +10,6 @@ interface StarMatchNumberProps {
 
 
 const StarMatchNumber: React.FC<StarMatchNumberProps> = (props) => {
-    const [state, setState] = useState();
-
 
     return (<button className="number"
         style={{ backgroundColor: colors[props.status] }}

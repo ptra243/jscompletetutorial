@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { useState } from 'react';
 
 interface StarDisplayProps {
     count: number;
@@ -10,7 +9,7 @@ const StarDisplay: React.FC<StarDisplayProps> = (props) => {
         <>
             {
                 [...Array(props.count)].map((x, i) =>
-                    <div key={i+1} className="star" />
+                    <div key={i + 1} className="star" />
                 )
             }
         </>);
